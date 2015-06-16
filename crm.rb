@@ -10,22 +10,22 @@ get "/contacts" do
   erb :contacts
 end
 
-get "/delete-contact" do
+get "/contacts/delete" do
   @delete_contact_page_title = "Delete a Contact"
   erb :delete
 end
 
-get "/edit-contact" do
+get "/contacts/edit" do
   @edit_page_title = "Edit a Contact"
   erb :edit
 end
 
-get "/add-contact" do
+get "/contacts/add" do
   @add_contact_page_title = "Add a Contact"
   erb :add
 end
 
-get "/show-attribute" do
+get "/contacts/show" do
   @contact_attribute_page_title = "See a Contact's Attributes"
   erb :show
 end
