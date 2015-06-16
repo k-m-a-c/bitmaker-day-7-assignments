@@ -7,5 +7,10 @@
 <body>
   <h1><%= @contacts_page_title %></h1>
   <p>Here's my list of contacts</p>
+  <ul>
+  <% @contacts.each do |contact| %>
+    <li><%= contact.first_name %> <%= contact.last_name %></li>
+  <% end %>
+  </ul>
 </body>
 </html>
