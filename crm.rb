@@ -7,32 +7,44 @@ $rolodex = Rolodex.new
 # NAVIGATION HANDLING
 
 get "/" do
-  @crm_app_name = "Kevin's CRM"
+  @page_title = "Home | Kevin's CRM"
+  @page_h1 = "Kevin's CRM"
+  @page_h2 = "Main Menu"
   erb :index
 end
 
 get "/contacts" do
-  @contacts_page_title = "My Contacts"
+  @page_title = "Contacts | Kevin's CRM"
+  @page_h1 = "Your Contacts"
+  @page_h2 = "Here's your list of contacts:"
   erb :contacts
 end
 
 get "/contacts/delete" do
-  @delete_contact_page_title = "Delete a Contact"
+  @page_title = "Delete a Contact | Kevin's CRM"
+  @page_h1 = "Delete a Contact"
+  @page_h2 = "Select a contact to delete:"
   erb :delete_contact
 end
 
 get "/contacts/edit" do
-  @edit_page_title = "Edit a Contact"
+  @page_title = "Edit a Contact | Kevin's CRM"
+  @page_h1 = "Edit a Contact"
+  @page_h2 = "Select a contact to edit:"
   erb :edit_contact
 end
 
 get "/contacts/add" do
-  @add_contact_page_title = "Add a Contact"
+  @page_title = "Add a Contact | Kevin's CRM"
+  @page_h1 = "Add a Contact"
+  @page_h2 = "Type in a contact's info to create a new contact:"
   erb :add_contact
 end
 
 get "/contacts/show" do
-  @contact_attribute_page_title = "See a Contact's Attributes"
+  @page_title = "Show a Contact | Kevin's CRM"
+  @page_h1 = "See your Contacts' Attributes"
+  @page_h2 = "Here's an attribute of your contact:"
   erb :show_contact
 end
 

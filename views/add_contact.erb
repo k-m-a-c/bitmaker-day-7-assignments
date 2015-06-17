@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Add a Contact</title>
-</head>
-<body>
-  <h1><%= @add_contact_page_title %></h1>
-  <p>Type in your contact's info</p>
-  <form action="/contacts" method="post">
-    <input type="text" name="first_name">
-    <input type="text" name="last_name">
-    <input type="text" name="email">
-    <input type="text" name="notes">
-    <input type="submit" name="submit">
-  </form>
-</body>
-</html>
+<form action="/contacts" method="post">
+  <input type="text" name="first_name">
+  <input type="text" name="last_name">
+  <input type="text" name="email">
+  <input type="text" name="notes">
+  <input type="submit" name="submit">
+</form>
