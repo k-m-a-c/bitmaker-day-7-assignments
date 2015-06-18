@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- META STUFF -->
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Kevin McLoughlin">
+  <meta name="description" content="A simple, yet minimal, CRM app.">
 
   <!-- TITLE -->
   <title><%= @page_title %></title>
 
   <!-- STYLES -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
+  <link rel="stylesheet" href="/bootstrap.min.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-  <h1><%= @page_h1 %></h1>
-  <h2><%= @page_h2 %></h2>
+    <!-- GLOBAL NAVIGATION -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Kevin's CRM
+            <!-- <img alt="Kevin's CRM Logo" src="/img/crm-logo.png"> -->
+          </a>
+        </div>
+        <div class="nav navbar-nav">
+          <ul class="nav navbar-nav">
+            <li><a href="/contacts/show">Contacts</a></li>
+            <li><a href="/contacts/add">Add Contact</a></li>
+            <li><a href="/contacts/edit">Edit Contact</a></li>
+            <li><a href="/contacts/delete">Delete Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <header>
+    <h1 class="h1-header"><%= @page_h1 %></h1>
+  </header>
+  <content>
+
   <%= yield %>
+
+  </content>
+
+
+  <footer>
+    <p>I'm a footer</p>
+    <p>^ LIAR! You're a "p" tag..</p>
+  </footer>
 </body>
 </html>
