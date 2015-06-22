@@ -8,28 +8,30 @@ ADD CONTACT FORM
   <div class="form-group">
 
     <!-- FORM FIELDS -->
-    <div class="field">
+    <div class="fieldset">
       <label for="first-name" class="form-label">First Name</label>
-      <input type="text" class="add-contact-form-field form-control form-control-lg" name="first_name" placeholder="e.g. Princess">
+      <input type="text" class="add-contact-form-field form-control form-control-lg" name="first_name" placeholder="e.g. Princess" required>
     </div>
 
-    <div class="field">
+    <div class="fieldset">
       <label for="last-name" class="form-label">Last Name</label>
       <input type="text" class="add-contact-form-field form-control form-control-lg" name="last_name" placeholder="e.g. Peach">
     </div>
 
-    <div class="field">
+    <div class="fieldset">
       <label for="email" class="form-label">Email</label>
-      <input type="email" class="add-contact-form-field form-control form-control-lg" name="email" placeholder="e.g. boss@mushroomkingdom.org">
+      <input type="email" class="add-contact-form-field form-control form-control-lg" name="email" placeholder="e.g. boss@mushroomkingdom.org" required>
     </div>
 
-    <div class="field">
+    <div class="fieldset">
       <label for="notes" class="form-label">Notes</label>
       <input type="text" class="add-contact-form-field form-control form-control-lg" name="notes" placeholder="e.g. Excellent hostage.">
     </div>
 
     <!-- SUBMIT BUTTON -->
-    <button type="submit" class="btn btn-primary btn-lg btn-red raised" value="Create Film">+ Add New Contact</button>
+    <div class="fieldset">
+      <button type="submit" class="btn btn-primary btn-lg btn-red raised" value="Create Film">+ Add New Contact</button>
+    </div>
   </div>
 
 </form>

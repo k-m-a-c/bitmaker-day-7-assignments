@@ -1,38 +1,27 @@
-<section class="contact-list">
-  <% @contacts.each do |contact| %>
+<% @contacts.reverse.each do |contact| %>
 
-    <h2 class="h2-header">
-      Contact: <span class="name"><%= contact.first_name %> <%= contact.last_name %></span>
-    </h2>
+<card>
 
-    <ul class="contacts">
+  <div class="card-top">
+    <h4 class="card-title">ID #:<%= contact.id %></h4>
+  </div>
 
+  <div class="contact-info">
+    <h4><%= contact.first_name %></h4>
+    <h4><%= contact.last_name %></h4>
+    <h5><a href="mailto:<%= contact.email %>"><%= contact.email %></a></h5>
+    <h5><%= contact.notes %></h5>
+  </div>
 
-        <li class="white-li">
-          <dl>
-            <dt>First Name</dt>
-            <dd><%= contact.first_name %></dd>
-          </dl>
-        </li>
-        <li class="white-li">
-          <dl>
-            <dt>Last Name</dt>
-            <dd><%= contact.last_name %></dd>
-          </dl>
-        </li>
-        <li class="white-li">
-          <dl>
-            <dt>Email</dt>
-            <dd><%= contact.email %></dd>
-          </dl>
-        </li>
-        <li class="white-li">
-          <dl>
-            <dt>Notes</dt>
-            <dd><%= contact.notes %></dd>
-          </dl>
-        </li>
+  <div class="contact-buttons">
+    <button class="edit-contact-btn">
+    EDIT CONTACT
+    </button>
+    <button class="delete-contact-btn">
+    DELETE CONTACT
+    </button>
+  </div>
 
-      <% end %>
-    </ul>
-</section>
+</card>
+
+<% end %>

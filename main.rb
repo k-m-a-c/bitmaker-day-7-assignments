@@ -71,6 +71,7 @@ end
 get "/contacts/edit" do
   @page_title = "Edit a Contact | Bowser's CRM"
   @page_h1 = "Edit a Contact"
+  @contacts = Contact.all
   erb :edit_contact
 end
 

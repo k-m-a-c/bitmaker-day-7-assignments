@@ -1,23 +1,25 @@
 
 /*
 ====================================
-HILARIOUS BOWSER-THEMED CRM TEMPLATE
+#### BOWSER-THEMED CRM TEMPLATE ####
+====================================
+Author: Kevin McLoughlin
+*/
+
+/*
+====================================
+GENERAL STYLES
 ====================================
 */
 
-/*CONTENT*/
 body {
   background-color: #000;
 }
-content {
-  display: inline-block;
-  padding: 14em 5em 0em 5em;
-  text-align: center;
+
+nav {
   position: relative;
-  margin: 0 auto;
-  width: 100%;
 }
-/*HEADER*/
+
 header {
   margin-top: 1em;
   display: block;
@@ -27,27 +29,42 @@ header {
   position: relative;
 }
 
-.h1-header {
-  color: #ffffff;
-  margin-bottom: 1em;
-  margin-left: 0.4em;
-  position: absolute;
+a {
+  color: #505050;
+  text-decoration: underline;
 }
 
-.h2-header {
-  color: #ffffff;
+p {
+  color: #000;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/*
+====================================
+MAIN LAYOUT
+====================================
+*/
+
+content {
+  display: inline-block;
+  padding: 14em 2em 0em 2em;
   text-align: center;
-  font-size: 20px;
-}
-
-.white-li {
-  color: #fff;
-}
-
-/*GLOBAL NAVIGATION*/
-nav {
   position: relative;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
 }
+
+/*
+====================================
+NAVIGATION
+====================================
+*/
 
 .navbar-inverse {
   border-color: #227A02;
@@ -71,6 +88,25 @@ nav {
   padding: 5px 10px 10px 10px;
 }
 
+/*
+====================================
+HEADINGS
+====================================
+*/
+
+.page-title {
+  color: #ffffff;
+  margin-bottom: 1em;
+  margin-left: 0.4em;
+  position: absolute;
+}
+
+.h2-header {
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+}
+
 /*MONSTER TEETH*/
 .arrow-down {
   display: inline-block;
@@ -92,38 +128,14 @@ nav {
   border-bottom: 20px solid #fff;
 }
 
-/*HACK TO CONTROL NUMBER OF TEETH THAT ARE VISIBLE*/
-
-.iphone-6-plus-header-monster-teeth {
-  text-align: center;
-}
-.iphone-6-plus-footer-monster-teeth {
-  text-align: center;
-}
-.iphone-6-header-monster-teeth {
-  text-align: center;
-}
-.iphone-6-footer-monster-teeth {
-  text-align: center;
-}
-.iphone-5-header-monster-teeth {
-  text-align: center;
-}
-.iphone-5-footer-monster-teeth {
-  text-align: center;
-}
-
-
-
 /*
-=======
+====================================
 BUTTONS
-=======
+====================================
 */
 
 .btn {
-  margin: 10px;
-  padding: 14px;
+  margin-top: 16px;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -134,7 +146,7 @@ BUTTONS
 }
 
 .btn-lg {
-  padding: 24px;
+  padding: 20px 25px 20px 25px;
 }
 
 .btn-red {
@@ -164,10 +176,14 @@ BUTTONS
   box-shadow: none;
 }
 
+.info-btn {
+  box-shadow: 0 3px 0 #6A6A6A;
+}
+
 /*
-=====
+====================================
 FORMS
-=====
+====================================
 */
 .form-label {
   color: #fff;
@@ -215,19 +231,16 @@ FORMS
 .add-contact-form {
   max-width: 480px;
 }
-.add-contact-form-field, .add-contact-form-submit {
+.add-contact-form-field {
   text-align: center;
 }
-.add-contact-form-submit {
-  width: 100%;
-}
 
-/*FOOTER*/
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
+/*
+====================================
+FOOTER
+====================================
+*/
+
 .sticky-footer {
   background-color: #CC5A1D;
   width: 100%;
@@ -239,6 +252,116 @@ footer {
   text-align: center;
   padding: 1em;
 }
+
+/*
+====================================
+HERO SECTION
+====================================
+*/
+
+.welcome-instructions {
+  text-align: center;
+  position: relative;
+}
+
+/*
+====================================
+CARDS
+====================================
+*/
+
+card {
+  display: inline-block;
+  background-color: #BDBDBD;
+  width: 90%;
+  height: 50%;
+  min-height: 14.1em;
+  max-height: 14.1em;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.card-title {
+  position: absolute;
+  top: 10%;
+  margin: 0;
+  color: #fff;
+}
+
+.card-top {
+  display: inline-block;
+  position: absolute;
+  background-color: #227A02;
+  border: 2px solid #BDBDBD;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2em;
+  text-align: left;
+  text-indent: 1em;
+  margin-bottom: 1em;
+}
+
+.contact-info {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  text-align: left;
+  margin-top: 1em;
+}
+
+.photo {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.contact-buttons {
+  display: inline-block;
+  position: absolute;
+  background-color: #010004;
+  border: 2px solid #BDBDBD;
+  bottom: 2%;
+  left: 0%;
+  width: 100%;
+  height: 4em;
+  text-align: center;
+}
+
+.edit-contact-btn {
+  display: inline-block;
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 2em;
+}
+
+.delete-contact-btn {
+  display: inline-block;
+  position: absolute;
+  background-color: #AB1F00;
+  color: #fff;
+  text-align: center;
+  top: 51%;
+  left: 0%;
+  width: 100%;
+  height: 2em;
+}
+
+
+/*HACK TO CONTROL NUMBER OF TEETH THAT ARE VISIBLE*/
+
+.iphone-5-header-monster-teeth {
+  text-align: center;
+}
+.iphone-5-footer-monster-teeth {
+  text-align: center;
+}
+
 
 /*MOBILE STYLES*/
 
